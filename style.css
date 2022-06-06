@@ -2,32 +2,76 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif
 }
 
 
 
-
 /* ******************** Index  html ***********************/
-
-
 #for-index {
   background-color: #3F0E40;
 }
 
 
-h1 {
-  color: white;
-  margin-top: 80px;
-  padding: 100px;
-}
 
-form {
-  margin: 0 auto;
-  text-align: center;
 
-}
+/* ******************** Form  html ***********************/
+
+
 
 #for-form {
-
+  background-image: url(./images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#for-form h1 {
+  color: white;
+  margin-top: 80px;
+  padding: 30px;
+  height: auto;
+}
+
+#for-form form {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f08080;
+  border-radius: 8px;
+  box-shadow: 20px 20px 50px 10px lightsalmon inset;
+}
+
+#for-form div {
+  padding: 5px 15px;
+}
+
+
+#for-form button {
+  width: 15%;
+  font-size: 22px;
+  margin-left: 3%;
+}
+
+#for-form button:hover {
+  background-color: lightseagreen;
+}
+
+#for-form label {
+  float: left;
+  font-size: 18px;
+
+}
+
+/* Mobile Screen */
+
+@media only screen and (min-width:480px) and (max-width:850px) {
+
+  #for-form button {
+    width: 25%;
+    font-size: 18px;
+    margin-left: 5%;
+  }
 }

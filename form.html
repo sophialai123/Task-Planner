@@ -19,40 +19,56 @@
   <form action="">
     <h1>Task Planner Form</h1>
 
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1">
+    <!-- Name -->
+    <div class="row">
+      <div class="col">
+        <label for="">First Name: </label>
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <label for="">Last Name: </label>
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
     </div>
-    <div class="form-group">
-      <label for="">DueDate:</label>
-      <input type="date" name="name" id="name"><br>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+
+    <!-- descrption -->
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Descrption: </label><br>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Descrption..."></textarea>
+    </div>
+
+    <!-- Assigned to -->
+    <div class="mb-3">
+      <label for="">Assigned to: </label>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected></option>
+        <option value="1">Nam One</option>
+        <option value="2">Name Two</option>
+        <option value="3">Name Three</option>
       </select>
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">Assigned To:</label>
-      <input type="text" name="name" id="Assignedname"><br>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Description</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <!-- dropdown boostrap -->
 
-    <select class="form-select form-select-lg mb-3" aria-label="Default select example">
-      <option selected>Status</option>
-      <option value="1">To Do</option>
-      <option value="2"> In Progress</option>
-      <option value="3">Review</option>
-      <option value="3">Done</option>
-    </select>
+    <!-- Due date -->
+    <div class="mb-3">
+      <label for="">Due Date: </label>
+      <input type="date" class="form-control mb-3">
+    </div>
+
+    <!-- Status -->
+    <div>
+      <label for="">Status: </label>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected></option>
+        <option value="1">Todo</option>
+        <option value="2">In progress</option>
+        <option value="3">Review</option>
+        <option value="3">Done</option>
+      </select>
+    </div>
+
     <!-- Submit Button -->
-    <button type="button" class="btn btn-success">Reset</button>
-    <button type="button" class="btn btn-success">Submit</button>
+    <button type="button" class="btn btn-success btn-lg mb-3">Reset</button>
+    <button type="button" class="btn btn-success btn-lg mb-3">Submit</button>
   </form>
   </div>
 </body>
