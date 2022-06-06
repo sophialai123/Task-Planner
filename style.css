@@ -2,22 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
 }
-
-
 
 /* ******************** Index  html ***********************/
-#for-index {
-  background-color: #3F0E40;
-}
-
-
-
+/* #for-index {
+  background-color: #563d7c;
+} */
 
 /* ******************** Form  html ***********************/
-
-
 
 #for-form {
   background-image: url(./images/background.jpeg);
@@ -48,7 +41,6 @@
   padding: 5px 15px;
 }
 
-
 #for-form button {
   width: 15%;
   font-size: 22px;
@@ -62,13 +54,11 @@
 #for-form label {
   float: left;
   font-size: 18px;
-
 }
 
 /* Mobile Screen */
 
-@media only screen and (min-width:480px) and (max-width:850px) {
-
+@media only screen and (min-width: 480px) and (max-width: 850px) {
   #for-form button {
     width: 25%;
     font-size: 18px;
