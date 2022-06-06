@@ -10,7 +10,7 @@
 /* ******************** Index  html ***********************/
 
 
-body {
+#for-index {
   background-color: #3F0E40;
 }
 
@@ -25,4 +25,9 @@ form {
   margin: 0 auto;
   text-align: center;
 
+}
+
+#for-form {
+  background-color: blue;
+  color: white;
 }
