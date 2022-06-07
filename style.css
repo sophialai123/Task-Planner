@@ -5,6 +5,14 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+
+:root {
+  --todo-bg-color: #D89078;
+  --progress-bg-color: #CA82FF;
+  --revivew-bg-color: #FFE69A;
+  --done-bg-color: #609090;
+}
+
 /* ******************** Index  html ***********************/
 /* #for-index {
   background-color: #563d7c;
@@ -66,8 +74,52 @@
   }
 }
 
-/* ******************** index  html ***********************/
 
-#for-index {
-  /* background-image: url(./images/background.jpeg); */
+/* ******************** Demo  html ***********************/
+
+#for-demo {
+  background-image: url(./images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* taks background colors */
+
+#for-demo .todo {
+  background-color: var(--todo-bg-color);
+}
+
+/* this is not working, need to slove */
+/* #for-demo .progress {
+  background-color: var(--progress-bg-color);
+} */
+
+#for-demo .review {
+  background-color: var(--revivew-bg-color);
+}
+
+#for-demo .done {
+  background-color: var(--done-bg-color);
+}
+
+
+#for-demo .card {
+  color: #609090;
+}
+
+
+#for-demo .done-button {
+  width: 15%;
+}
+
+/* Mobile Screen */
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  #for-demo .done-button {
+    width: auto;
+  }
 }
