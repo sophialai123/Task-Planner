@@ -37,13 +37,6 @@
   height: auto;
 }
 
-#for-form form {
-  margin: 0 auto;
-  text-align: center;
-  background-color: #f08080;
-  border-radius: 8px;
-  box-shadow: 20px 20px 50px 10px lightsalmon inset;
-}
 
 #for-form div {
   padding: 5px 15px;
@@ -81,7 +74,6 @@
   background-image: url(./images/background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
   height: auto;
   width: 70%;
   margin: 0 auto;
@@ -113,13 +105,9 @@
 }
 
 
-#for-demo .done-button {
-  width: 15%;
-}
-
-/* Mobile Screen */
-@media only screen and (min-width: 480px) and (max-width: 736px) {
+/* 
+Mobile Screen @media only screen and (min-width: 480px) and (max-width: 736px) {
   #for-demo .done-button {
     width: auto;
   }
-}
+} */

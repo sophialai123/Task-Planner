@@ -16,17 +16,21 @@
 
 <body id="for-demo">
   <header class="d-flex justify-content-center">
-    <h1 class="text-center p-4">Task Demo</h1>
-    <a href="form.html" class="align-self-center">
-      <button type="button" class="btn btn-primary">Add Task</button>
-    </a>
+    <h1 class="text-center p-4 text-white">Task Planner</h1>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success mt-4" style="height: 42px;" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Add Task
+    </button>
+
   </header>
   <main>
     <div class="container py-6">
       <div class="row gap-5">
         <!-- --------------------  Todo --------------------------->
-        <div class="col border rounded todo">
-          <h3 class="text-center">ToDo</h3>
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded todo">
+          <h3 class="text-center">Task Name</h3>
           <div>
             <!-- taks infor -->
             <div class="card mb-3">
@@ -65,8 +69,8 @@
         </div>
 
         <!-- --------------------  In Progress --------------------------->
-        <div class="col  border rounded bg-info">
-          <h3 class="text-center">In Progress</h3>
+        <div class="col  col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
           <div>
             <!-- taks infor -->
             <div class="card mb-3">
@@ -105,10 +109,50 @@
           </div>
         </div>
 
-
         <!-- --------------------  Review --------------------------->
-        <div class="col  border rounded review">
-          <h3 class="text-center">Review</h3>
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded review">
+          <h3 class="text-center">Task Name</h3>
+          <div>
+            <!-- taks infor -->
+            <div class="card mb-3">
+              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <div class="card-body border">
+                <div class="mb-3 ">
+                  <!-- <label class="form-control for="">Assigned to:</label> -->
+                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="">Due Date: </label>
+                  <input type="date"> -->
+                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                </div>
+                <div class="mb-3 ">
+                  <!-- <label for="">Description:</label> -->
+                  <textarea class="form-control" id="" cols=" 30" rows="3"
+                    placeholder="Description: Select the feedback from customer to post on site"></textarea>
+                </div>
+
+                <!-- Edit buttons -->
+                <div class="d-flex gap-3 justify-content-center ">
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <div class="dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Status Change</option>
+                      <option value="1">Todo </option>
+                      <option value="2">In Progress</option>
+                      <option selected value="3">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------  Review --------------------------->
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded review">
+          <h3 class="text-center">Task Name</h3>
           <div>
             <!-- taks infor -->
             <div class="card mb-3">
@@ -148,8 +192,8 @@
           </div>
         </div>
         <!-- -------------------- Done --------------------------->
-        <div class="col col-12 border rounded done">
-          <h3 class="text-center">Done</h3>
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded done">
+          <h3 class="text-center">Task Name</h3>
           <!-- taks infor -->
           <div class="card mb-3">
             <h5 class="card-header text-center fw-bold">Developing Content</h5>
@@ -187,6 +231,89 @@
         </div>
       </div>
     </div>
+
+    <!-- ------------------------------- Popup Form----------------------------- -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+          <div class="modal-body">
+            <form action="" id="add-task">
+              <h1 class="text-center">Task Planner Form</h1>
+
+              <!-- Name -->
+              <div class="row">
+                <div class="col">
+                  <label for="">First Name: </label>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <label for="">Last Name: </label>
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+
+              <!-- descrption -->
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descrption: </label><br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Descrption..."
+                  required></textarea>
+              </div>
+
+              <!-- Assigned to -->
+              <div class="mb-3">
+                <label for="">Assigned to: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected></option>
+                  <option value="1">Yue</option>
+                  <option value="2">Sophia</option>
+                  <option value="3">Sandesh</option>
+                  <option value="3">Others</option>
+                </select>
+              </div>
+
+              <!-- Due date -->
+              <div class="mb-3">
+                <label for="">Due Date: </label>
+                <input type="date" class="form-control mb-3">
+              </div>
+
+              <!-- Status -->
+              <div>
+                <label for="">Status: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected></option>
+                  <option value="1">Todo</option>
+                  <option value="2">In progress</option>
+                  <option value="3">Review</option>
+                  <option value="3">Done</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="#">
+              <button type="button" class="btn btn-success  mb-3">Reset</button>
+            </a>
+            <a href="index.html">
+              <button type="button" class="btn btn-success  mb-3">Submit</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ------------------------------- End of Form----------------------------- -->
   </main>
 
   <!-- JavaScript -->
