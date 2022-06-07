@@ -1,141 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Boostrap Links  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <!-- Boostrap Links  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body id="for-index">
+    <header class="d-flex justify-content-center">
+      <h1 class="text-center p-4" style="color: #9ba3eb">Task Management</h1>
+      <a href="form.html" class="align-self-center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="background-color: #f0c090"
+          ;
+        >
+          Add Task
+        </button>
+      </a>
+    </header>
+    <main>
+      <div class="container mb-5">
+        <div class="row">
+          <!-- --------------------  Todo --------------------------->
+          <div
+            class="col-4 border rounded"
+            style="width: 18rem; height: 60rem; background-color: #d89078"
+          >
+            <h3 class="text-center pt-2 todo-title">ToDo</h3>
+            <div>
+              <div class="card mb-3">
+                <h5 class="card-header">Task Name</h5>
+                <div class="card-body">
+                  <ul class="list-group pb-2">
+                    <li class="list-group-item">Due Date:</li>
+                    <li class="list-group-item">Assigned to:</li>
+                    <li class="list-group-item" style="height: 6rem">
+                      Description:
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                    <a href="#" class="btn btn-secondary">Delete</a>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Todo</option>
+                      <option value="1">In Progress</option>
+                      <option value="2">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
-<body id="for-index">
-  <header class="d-flex justify-content-center">
-    <h1 class="text-center p-4">Task Management</h1>
-    <a href="form.html" class="align-self-center">
-      <button type="button" class="btn btn-primary">Add Task</button>
-    </a>
-  </header>
-  <main>
-    <div class="container mb-5">
-      <div class="row">
-        <!-- --------------------  Todo --------------------------->
-        <div class="col-4 border rounded" style= "width: 18rem; height: 120rem">
-          <h3 class="text-center">ToDo</h3>
-          <div>
-            <div class="card mb-3">
-              <h5 class="card-header">Task Name</h5>
-              <div class="card-body">
-                <ul class="list-group pb-2">
-                  <li class="list-group-item">Due Date:</li>
-                  <li class="list-group-item">Assigned to:</li>
-                  <li class="list-group-item" style="height: 6rem">Description:</li>
-                </ul>
-                <div class="d-flex justify-content-around">
-                  <a href="#" class="btn btn-secondary">Edit</a>
-                  <a href="#" class="btn btn-secondary">Delete</a>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Status Change
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Todo</a></li>
-                      <li><a class="dropdown-item" href="#">In Progress</a></li>
-                      <li><a class="dropdown-item" href="#">Review</a></li>
-                      <li><a class="dropdown-item" href="#">Done</a></li>
-                    </ul>
+              <div class="card mb-3">
+                <h5 class="card-header">Task Name</h5>
+                <div class="card-body">
+                  <ul class="list-group pb-2">
+                    <li class="list-group-item">Due Date:</li>
+                    <li class="list-group-item">Assigned to:</li>
+                    <li class="list-group-item" style="height: 6rem">
+                      Description:
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                    <a href="#" class="btn btn-secondary">Delete</a>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Todo</option>
+                      <option value="1">In Progress</option>
+                      <option value="2">Review</option>
+                      <option value="3">Done</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="card mb-3">
-              <h5 class="card-header">Task Name</h5>
-              <div class="card-body">
-                <ul class="list-group pb-2">
-                  <li class="list-group-item">Due Date:</li>
-                  <li class="list-group-item">Assigned to:</li>
-                  <li class="list-group-item" style="height: 6rem">Description:</li>
-                </ul>
-                <div class="d-flex justify-content-around">
-                  <a href="#" class="btn btn-secondary">Edit</a>
-                  <a href="#" class="btn btn-secondary">Delete</a>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Status Change
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Todo</a></li>
-                      <li><a class="dropdown-item" href="#">In Progress</a></li>
-                      <li><a class="dropdown-item" href="#">Review</a></li>
-                      <li><a class="dropdown-item" href="#">Done</a></li>
-                    </ul>
+          <!-- --------------------  In Progress --------------------------->
+
+          <div
+            class="col-4 border rounded"
+            style="width: 18rem; height: 60rem; background-color: #ebd671"
+          >
+            <h3 class="text-center pt-2 inprogress-title">In Progress</h3>
+            <div>
+              <div class="card mb-3">
+                <h5 class="card-header">Task Name</h5>
+                <div class="card-body">
+                  <ul class="list-group pb-2">
+                    <li class="list-group-item">Due Date:</li>
+                    <li class="list-group-item">Assigned to:</li>
+                    <li class="list-group-item" style="height: 6rem">
+                      Description:
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                    <a href="#" class="btn btn-secondary">Delete</a>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>InProgress</option>
+                      <option value="1">Todo</option>
+                      <option value="2">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------------  Review --------------------------->
+          <div
+            class="col-4 border rounded pt-2"
+            style="width: 18rem; height: 60rem; background-color: #6fb2d2"
+          >
+            <h3 class="text-center">Review</h3>
+            <div>
+              <div class="card mb-3">
+                <h5 class="card-header">Task Name</h5>
+                <div class="card-body">
+                  <ul class="list-group pb-2">
+                    <li class="list-group-item">Due Date:</li>
+                    <li class="list-group-item">Assigned to:</li>
+                    <li class="list-group-item" style="height: 6rem">
+                      Description:
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                    <a href="#" class="btn btn-secondary">Delete</a>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Review</option>
+                      <option value="1">Todo</option>
+                      <option value="2">InProgress</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------- Done --------------------------->
+          <div
+            class="col-4 border rounded pt-2"
+            style="width: 18rem; height: 60rem; background-color: #609090"
+          >
+            <h3 class="text-center">Done</h3>
+            <div>
+              <div class="card mb-3">
+                <h5 class="card-header">Task Name</h5>
+                <div class="card-body">
+                  <ul class="list-group pb-2">
+                    <li class="list-group-item">Due Date:</li>
+                    <li class="list-group-item">Assigned to:</li>
+                    <li class="list-group-item" style="height: 6rem">
+                      Description:
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                    <a href="#" class="btn btn-secondary">Delete</a>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Done</option>
+                      <option value="1">Todo</option>
+                      <option value="2">In Progress</option>
+                      <option value="3">Review</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-        <!-- --------------------  In Progress --------------------------->
-
-        <div class="col-4 border rounded" style="width: 18rem;height: 60rem">
-          <h3 class="text-center">In Progress</h3>
-          <div>
-            <div class="card mb-3">
-              <h5 class="card-header">Task Name</h5>
-              <div class="card-body">
-                <ul class="list-group pb-2">
-                  <li class="list-group-item">Due Date:</li>
-                  <li class="list-group-item">Assigned to:</li>
-                  <li class="list-group-item" style="height: 6rem">Description:</li>
-                </ul>
-                <div class="d-flex justify-content-around">
-                  <a href="#" class="btn btn-secondary">Edit</a>
-                  <a href="#" class="btn btn-secondary">Delete</a>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Status Change
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Todo</a></li>
-                      <li><a class="dropdown-item" href="#">In Progress</a></li>
-                      <li><a class="dropdown-item" href="#">Review</a></li>
-                      <li><a class="dropdown-item" href="#">Done</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- --------------------  Review --------------------------->
-        <div class="col-4 border rounded" style="width: 18rem;height: 60rem">
-          <h3 class="text-center">Review</h3>
-          
-        </div>
-
-
-        <!-- -------------------- Done --------------------------->
-        <div class="col-4 border rounded" style="width: 18rem;height: 60rem">
-          <h3 class="text-center">Done</h3>
-        </div>
-
       </div>
-    </div>
-    </div>
-  </main>
-
-</body>
-
+    </main>
+  </body>
 </html>
