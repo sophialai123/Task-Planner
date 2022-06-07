@@ -21,9 +21,9 @@
 /* ******************** Form  html ***********************/
 
 #for-form {
-  background-image: url(./images/background.jpeg);
+  /* background-image: url(./images/background.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: white;
   height: auto;
   width: 70%;
@@ -38,34 +38,24 @@
 }
 
 
-#for-form div {
-  padding: 5px 15px;
-}
 
-#for-form button {
-  width: 15%;
-  font-size: 22px;
-  margin-left: 3%;
-}
-
-#for-form button:hover {
+button:hover {
   background-color: lightseagreen;
 }
 
-#for-form label {
+form label {
   float: left;
   font-size: 18px;
+  margin-top: 10px;
 }
 
-/* Mobile Screen */
 
-@media only screen and (min-width: 480px) and (max-width: 850px) {
-  #for-form button {
-    width: 25%;
-    font-size: 18px;
-    margin-left: 5%;
-  }
+form .font-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
+
 
 
 /* ******************** Demo  html ***********************/
@@ -85,29 +75,3 @@
 #for-demo .todo {
   background-color: var(--todo-bg-color);
 }
-
-/* this is not working, need to slove */
-/* #for-demo .progress {
-  background-color: var(--progress-bg-color);
-} */
-
-#for-demo .review {
-  background-color: var(--revivew-bg-color);
-}
-
-#for-demo .done {
-  background-color: var(--done-bg-color);
-}
-
-
-#for-demo .card {
-  color: #609090;
-}
-
-
-/* 
-Mobile Screen @media only screen and (min-width: 480px) and (max-width: 736px) {
-  #for-demo .done-button {
-    width: auto;
-  }
-} */
