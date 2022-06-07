@@ -16,7 +16,7 @@
 </head>
 
 <body id="for-form">
-  <form action="">
+  <form action="" id="form">
     <h1>Task Planner Form</h1>
 
     <!-- Name -->
@@ -34,7 +34,8 @@
     <!-- descrption -->
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Descrption: </label><br>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Descrption..."></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Descrption..."
+        required></textarea>
     </div>
 
     <!-- Assigned to -->
@@ -67,8 +68,13 @@
     </div>
 
     <!-- Submit Button -->
-    <button type="button" class="btn btn-success btn-lg mb-3">Reset</button>
-    <button type="button" class="btn btn-success btn-lg mb-3">Submit</button>
+    <a href="">
+      <button type="button" class="btn btn-success btn-lg mb-3">Reset</button>
+    </a>
+    <a href="index.html">
+      <button type="button" class="btn btn-success btn-lg mb-3">Submit</button>
+    </a>
+
   </form>
   </div>
 </body>
